@@ -3,5 +3,5 @@ Attraverso la clusterizzazione di 2890 osservazioni raccolte da iNaturalist entr
 Questa visualizzazione non è solo un archivio: è un invito a leggere il territorio attraverso le sue forme di vita, a osservare come ciascun organismo abiti — o fatichi ad abitare — il paesaggio antropizzato. Le immagini naturalistiche e i nomi scientifici guidano un’esplorazione attenta, accessibile e profonda, trasformando dati di citizen science in un’esperienza di conoscenza ecologica.
 
 Scopri di più
-[https://alessialpr.github.io/Unveiled/about.html](https://alessialpr.github.io/Unveiled/index.html)
+[[https://alessialpr.github.io/Unveiled/about.html](https://alessialpr.github.io/Unveiled/index.html)](https://alessialpr.github.io/Unveiled/)
 
