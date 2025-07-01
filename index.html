@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unveiled</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet" href="style.css" />
+    
+  </head>
+<body class="index-page">
+    <header>
+      <a href="index.html" class="subtitle">UNVEILED</a>
+      <a href="about.html" class="subtitle">ABOUT</a>
+    </header>
+
+
+    <div id="loading-overlay">
+      <div class="loading-content">
+        <div id="loading-title">UNVEILED</div>
+        <div id="loading-subtitle">
+          Spazio esplorativo del fiume Marzenego, tracciato dalle osservazioni delle specie che lo abitano<br>
+          <span class="asterisk">❋❋❋❋❋</span><br>
+ Le immagini scorrono come il fiume:
+lo seguono longitudinalmente lungo il corso
+e si dispongono verticalmente per gruppo biologico.<br>
+          <span class="asterisk">❋❋❋❋❋</span><br>
+          <strong>Naviga. Ingrandisci. Clicca. Filtra. Scopri.</strong><br>
+        </div>
+        <div class="loading-switch">
+          <div id="loading-text" class="typewriter"></div>
+          <button id="explore-button">ESPLORA</button>
+        </div>
+        
+        
+      </div>
+    </div>
+    
+  
+    <div id="info-panel">
+      <button id="info-panel-close">&times;</button>
+      <h2 id="info-panel-title"></h2>
+      <div id="info-panel-content">
+        <div class="media-column">
+          <div id="info-panel-image-container">
+            <img id="info-panel-image" src="" alt="" />
+          </div>
+          <div id="mini-map-container">
+            <div id="map-loading">Caricamento mappa...</div>
+            <img
+              id="mini-map"
+              class="loading"
+              src=""
+              alt="Mappa localizzazione"
+            />
+            <div id="map-year-badge"></div>
+            <div id="mapbox-attribution">
+              © <a href="https://www.mapbox.com/" target="_blank">Mapbox</a> | ©
+              <a href="https://www.openstreetmap.org/copyright" target="_blank"
+                >OpenStreetMap</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="metadata-column">
+          <div class="metadata-container" id="metadata-container"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="filters">
+      <div class="filter-wrapper">
+        <div class="custom-select" id="kingdom-filter">
+          <div class="custom-select__selected"><span class="custom-select__selected-text">Regno</span></div>
+          <div class="custom-select__options">
+            <div class="custom-select__option" data-value="">Regno</div>
+            <div class="custom-select__option" data-value="Animalia">Animalia</div>
+            <div class="custom-select__option" data-value="Plantae">Plantae</div>
+            <div class="custom-select__option" data-value="Fungi">Fungi</div>
+            <div class="custom-select__option" data-value="Chromista">Chromista</div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-wrapper">
+        <div class="custom-select" id="class-filter">
+          <div class="custom-select__selected"><span class="custom-select__selected-text">Classe</span></div>
+          <div class="custom-select__options">
+            <div class="custom-select__option" data-value="">Classe</div>
+            <div class="custom-select__option" data-value="Mammalia">Mammalia</div>
+            <div class="custom-select__option" data-value="Aves">Aves</div>
+            <div class="custom-select__option" data-value="Reptilia">Reptilia</div>
+            <div class="custom-select__option" data-value="Amphibia">Amphibia</div>
+            <div class="custom-select__option" data-value="Actinopterygii">Actinopterygii</div>
+            <div class="custom-select__option" data-value="Insecta">Insecta</div>
+            <div class="custom-select__option" data-value="Arachnida">Arachnida</div>
+            <div class="custom-select__option" data-value="Chilopoda">Chilopoda</div>
+            <div class="custom-select__option" data-value="Diplopoda">Diplopoda</div>
+            <div class="custom-select__option" data-value="Malacostraca">Malacostraca</div>
+            <div class="custom-select__option" data-value="Gastropoda">Gastropoda</div>
+            <div class="custom-select__option" data-value="Bivalvia">Bivalvia</div>
+            <div class="custom-select__option" data-value="Clitellata">Clitellata</div>
+            <div class="custom-select__option" data-value="Magnoliopsida">Magnoliopsida</div>
+            <div class="custom-select__option" data-value="Liliopsida">Liliopsida</div>
+            <div class="custom-select__option" data-value="Polypodiopsida">Polypodiopsida</div>
+            <div class="custom-select__option" data-value="Bryopsida">Bryopsida</div>
+            <div class="custom-select__option" data-value="Agaricomycetes">Agaricomycetes</div>
+            <div class="custom-select__option" data-value="Pucciniomycetes">Pucciniomycetes</div>
+            <div class="custom-select__option" data-value="Phaeophyceae">Phaeophyceae</div>
+            <div class="custom-select__option" data-value="Lecanoromycetes">Lecanoromycetes</div>
+          </div>
+        </div>
+      </div>
+      <div class="filter-wrapper">
+        <div class="custom-select" id="year-filter">
+          <div class="custom-select__selected"><span class="custom-select__selected-text">Anno</span></div>
+          <div class="custom-select__options">
+            <div class="custom-select__option" data-value="">Anno</div>
+            <div class="custom-select__option" data-value="2020">2020</div>
+            <div class="custom-select__option" data-value="2021">2021</div>
+            <div class="custom-select__option" data-value="2022">2022</div>
+            <div class="custom-select__option" data-value="2023">2023</div>
+            <div class="custom-select__option" data-value="2024">2024</div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="mainCanvas"></canvas>
+    </div>
+    <script>
+      // Custom select logic robusta
+      (function() {
+        function closeAllCustomSelects(except) {
+          document.querySelectorAll('.custom-select.open').forEach(function(openSel) {
+            if (!except || openSel !== except) openSel.classList.remove('open');
+          });
+        }
+        document.querySelectorAll('.custom-select').forEach(function(select) {
+          var selected = select.querySelector('.custom-select__selected');
+          var selectedText = select.querySelector('.custom-select__selected-text');
+          var options = select.querySelector('.custom-select__options');
+          var optionDivs = options.querySelectorAll('.custom-select__option');
+          // Accessibilità: focus
+          selected.setAttribute('tabindex', '0');
+          // Apri/chiudi menu (toggle)
+          selected.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var isOpen = select.classList.contains('open');
+            if (isOpen) {
+              select.classList.remove('open');
+            } else {
+              closeAllCustomSelects(select);
+              select.classList.add('open');
+            }
+          });
+          selected.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              selected.click();
+            }
+          });
+          // Seleziona opzione
+          optionDivs.forEach(function(opt) {
+            opt.addEventListener('click', function(e) {
+              e.stopPropagation();
+              optionDivs.forEach(o => o.classList.remove('selected'));
+              opt.classList.add('selected');
+              selectedText.textContent = opt.textContent;
+              selected.dataset.value = opt.dataset.value;
+              select.classList.remove('open');
+              // Dispatch custom event per filtro
+              select.dispatchEvent(new CustomEvent('custom-select-change', { detail: { value: opt.dataset.value } }));
+            });
+          });
+        });
+        // Chiudi menu su click fuori
+        document.addEventListener('mousedown', function(e) {
+          if (!e.target.closest('.custom-select')) {
+            closeAllCustomSelects();
+          }
+        });
+        // Chiudi menu su scroll
+        window.addEventListener('scroll', function() {
+          closeAllCustomSelects();
+        });
+      })();
+
+      // Typewriter effect per frasi di loading
+      (function() {
+        var loadingText = document.getElementById('loading-text');
+        var phrases = [
+          'loading...',
+          'sto costruendo il tracciato del fiume...',
+          'sto analizzando le specie...',
+          'sto ordinando le osservazioni...',
+          'sto suddividendo le classi...',
+          'sto mappando le connessioni ecologiche...'
+        ];
+        var idx = 0;
+        var charIdx = 0;
+        var typing = true;
+        var finished = false;
+        function typeWriter() {
+          if (charIdx <= phrases[idx].length) {
+            loadingText.innerHTML = phrases[idx].substring(0, charIdx) + '<span class="type-cursor">|</span>';
+            charIdx++;
+            setTimeout(typeWriter, 40);
+          } else {
+            typing = false;
+            setTimeout(eraseWriter, 3000); // Frase visibile più a lungo
+          }
+        }
+        function eraseWriter() {
+          if (charIdx > 0) {
+            loadingText.innerHTML = phrases[idx].substring(0, charIdx-1) + '<span class="type-cursor">|</span>';
+            charIdx--;
+            setTimeout(eraseWriter, 15);
+          } else {
+            idx = idx + 1;
+            typing = true;
+            // Dopo l'ultima frase, scrivi loading... con typewriter e poi fermati
+            if (idx === phrases.length) {
+              var loadingStr = 'loading...';
+              var loadingIdx = 0;
+              function loadingTypewriter() {
+                if (loadingIdx <= loadingStr.length) {
+                  loadingText.innerHTML = loadingStr.substring(0, loadingIdx) + '<span class="type-cursor">|</span>';
+                  loadingIdx++;
+                  setTimeout(loadingTypewriter, 40);
+                } else {
+                  loadingText.innerHTML = loadingStr + '<span class="type-cursor">|</span>';
+                }
+              }
+              loadingTypewriter();
+            } else {
+              setTimeout(typeWriter, 700);
+            }
+          }
+        }
+        // Impedisce a capo forzato
+        loadingText.style.whiteSpace = 'nowrap';
+        typeWriter();
+      })();
+    </script>
+    <script src="visualization.js"></script>
+  </body>
+</html>
+
+
