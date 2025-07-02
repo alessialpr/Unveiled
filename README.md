@@ -2,6 +2,4 @@ Unveiled è un atlante visivo e sensibile che esplora la biodiversità lungo il 
 Attraverso la clusterizzazione di 2890 osservazioni raccolte da iNaturalist entro 1 km dal corso del fiume, Unveiled costruisce una geografia biologica che visualizza ciò che è visibile, ma anche ciò che manca: vuoti e discontinuità ecologiche. Le specie sono disposte longitudinalmente secondo la loro posizione sul fiume, mentre verticalmente per classe tassonomica, componendo un esploso che rivela pattern, sovrapposizioni e assenze.
 Questa visualizzazione non è solo un archivio: è un invito a leggere il territorio attraverso le sue forme di vita, a osservare come ciascun organismo abiti — o fatichi ad abitare — il paesaggio antropizzato. Le immagini naturalistiche e i nomi scientifici guidano un’esplorazione attenta, accessibile e profonda, trasformando dati di citizen science in un’esperienza di conoscenza ecologica.
 
-Scopri di più
-https://alessialpr.github.io/Unveiled/
 
